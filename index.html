@@ -13,20 +13,7 @@ registration: open
 instructor: ["Bernhard Konrad", "Scott Chamberlain", "TBD"]
 contact: admin@software-carpentry.org
 ---
-<div align="center">
-  <p><strong><em>
-      This page is a template for bootcamp home pages.
-      <br/>
-      Please see
-      <a href="https://github.com/swcarpentry/bc">https://github.com/swcarpentry/bc</a>
-      for instructions on how to create
-      a repository for your bootcamp.
-      <br/>
-      Please also see
-      the <a href="{{page.root}}/lessons/index.html">index to our lessons</a>
-      and the <a href="{{page.root}}/lessons/setup.html">index to setup instructions</a>.
-  </em></strong></p>
-</div>
+
 {% include bootcamps/instructors.html %}
 {% include bootcamps/what.html %}
 {% include bootcamps/who.html %}
@@ -67,25 +54,32 @@ contact: admin@software-carpentry.org
     </ul>
   </div>
   <div class="span6">
-    <h3><a href="lessons/swc-db/tutorial.html">Databases</a></h3>
+    <h3><a href="lessons/swc-pyblocks/opening.html">Python</a></h3>
     <ul>
-      <li>{% include guide-db/select/title.md %}</li>
-      <li>{% include guide-db/distinct/title.md %}</li>
-      <li>{% include guide-db/filter/title.md %}</li>
-      <li>{% include guide-db/calc/title.md %}</li>
-      <li>{% include guide-db/sort/title.md %}</li>
-      <li>{% include guide-db/null/title.md %}</li>
-      <li>{% include guide-db/aggregate/title.md %}</li>
-      <li>{% include guide-db/grouping/title.md %}</li>
-      <li>{% include guide-db/join/title.md %}</li>
-      <li>{% include guide-db/create/title.md %}</li>
-      <li>{% include guide-db/transactions/title.md %}</li>
-      <li>{% include guide-db/programming/title.md %}</li>
+      <li>{% include guide-pyblocks/basic/title.md %}</li>
+      <li>{% include guide-pyblocks/design/title.md %}</li>
+      <li>{% include guide-pyblocks/index/title.md %}</li>
+      <li>{% include guide-pyblocks/forloop/title.md %}</li>
+      <li>{% include guide-pyblocks/functions/title.md %}</li>
+      <li>{% include guide-pyblocks/lib/title.md %}</li>
+      <li>{% include guide-pyblocks/logic/title.md %}</li>
+      <li>{% include guide-pyblocks/return/title.md %}</li>
+      <li>{% include guide-pyblocks/types/title.md %}</li>
     </ul>
   </div>
 </div>
 
 <hr/>
+
+
+<h2> Schedule </h2>
+	{% include schedule.html %}
+
+<h2> Chatrooms </h2>
+	<ul>
+		<li> Link to R etherpad </li>
+		<li> Link to Python etherpad </li>
+	</ul>
 
 <h2>Reference Guides</h2>
 

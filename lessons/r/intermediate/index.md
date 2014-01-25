@@ -5,6 +5,8 @@ title: Intermediate R, January 2014 U of Miami Software Carpentry Bootcamp
 raw: raw.github.com/swcarpentry/bc/gh-pages
 ---
 
+[http://tiny.cc/rmiami](http://tiny.cc/rmiami) points to this page
+
 Session 1.1
 
   * Basics of R/RStudio
@@ -13,25 +15,27 @@ Session 1.1
   * Working via scripts (vs. direct typing/pasting in Console)
   * Sourcing and compiling an HTML "notebook" from a script
   * See
-    - [R basics, workspace and working directory, RStudio projects](http://www.stat.ubc.ca/~jenny/STAT545A/block01_basicsWorkspaceWorkingDirProject.html) | [source](https://github.com/jennybc/STAT545A/blob/master/block01_basicsWorkspaceWorkingDirProject.rmd)
+    - [R basics, workspace and working directory, RStudio projects](http://www.stat.ubc.ca/~jenny/STAT545A/block01_basicsWorkspaceWorkingDirProject.html) -- [source](https://github.com/jennybc/STAT545A/blob/master/block01_basicsWorkspaceWorkingDirProject.rmd)
   
 Session 1.2
 
   * Care and feeding of R objects
   * See
-    - [Basic care and feeding of data in R](http://www.stat.ubc.ca/~jenny/STAT545A/block02_careFeedingData.html) | [source](https://github.com/jennybc/STAT545A/blob/master/block02_careFeedingData.rmd)
-    - [R objects (beyond data.frames) and indexing](http://www.stat.ubc.ca/~jenny/STAT545A/block03_basicObjects.html) | [source](https://github.com/jennybc/STAT545A/blob/master/block03_basicObjects.rmd)
+    - [Basic care and feeding of data in R](http://www.stat.ubc.ca/~jenny/STAT545A/block02_careFeedingData.html) -- [source](https://github.com/jennybc/STAT545A/blob/master/block02_careFeedingData.rmd)
+    - [R objects (beyond data.frames) and indexing](http://www.stat.ubc.ca/~jenny/STAT545A/block03_basicObjects.html) -- [source](https://github.com/jennybc/STAT545A/blob/master/block03_basicObjects.rmd)
   
 Session 1.3
 
   * Hybrid session with meta-content (version control with Git) and R content (data aggregation). May run into beginning of next session.
   * Local usage of Git; RStudio as a Git client; Git commands in the shell.
   * Data aggregation. See
-    - [Data aggregation](http://www.stat.ubc.ca/~jenny/STAT545A/block04_dataAggregation.html) | [source](https://github.com/jennybc/STAT545A/blob/master/block04_dataAggregation.rmd)
+    - [Data aggregation](http://www.stat.ubc.ca/~jenny/STAT545A/block04_dataAggregation.html) -- [source](https://github.com/jennybc/STAT545A/blob/master/block04_dataAggregation.rmd)
 
 Session 1.4
 
   * Making figures using `ggplot2`.
+  * See
+    - [Overview of the R graphics landscape](http://www.stat.ubc.ca/~jenny/STAT545A/block90_baseLatticeGgplot2.html)
   
 Session 2.1
 
@@ -48,8 +52,8 @@ Session 2.3
   * Writing pipeline-ready scripts, i.e. file I/O and writing figures to file.
   * Scripts that run other scripts -- R, Make.
   * See
-    - [Getting data out of R](http://www.stat.ubc.ca/~jenny/STAT545A/block05_getNumbersOut.html) | [source](https://github.com/jennybc/STAT545A/blob/master/block05_getNumbersOut.rmd)
-    - [Writing figures to file](http://www.stat.ubc.ca/~jenny/STAT545A/topic12_writeFigureToFile.html) | [source](https://github.com/jennybc/STAT545A/blob/master/topic12_writeFigureToFile.rmd)
+    - [Getting data out of R](http://www.stat.ubc.ca/~jenny/STAT545A/block05_getNumbersOut.html) -- [source](https://github.com/jennybc/STAT545A/blob/master/block05_getNumbersOut.rmd)
+    - [Writing figures to file](http://www.stat.ubc.ca/~jenny/STAT545A/topic12_writeFigureToFile.html) -- [source](https://github.com/jennybc/STAT545A/blob/master/topic12_writeFigureToFile.rmd)
 
 Session 2.4
 
@@ -59,4 +63,5 @@ Jenny notes to self (may not make sense to others!)
 
   * think about production of PDFs vs PNGs w/r/t teachable moments about git(ignore) and git(hub)
   * work with Bernhard to make sure I've left good "to do's" behind for session 2.1
+  * set up repo to commit to when I'm working live; set up associated github repo; get a short URL and put here
   

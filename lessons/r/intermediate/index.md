@@ -9,6 +9,8 @@ raw: raw.github.com/swcarpentry/bc/gh-pages
 
 [http://tiny.cc/gapminder](http://tiny.cc/gapminder) points to the Gapminder data we'll use
 
+We will write R code together "live" in the sessions, but below I link to written content on most topics, for your future reference.
+
 Session 1.1
 
   * Basics of R/RStudio
@@ -38,6 +40,9 @@ Session 1.4
   * Making figures using `ggplot2`.
   * See
     - [Overview of the R graphics landscape](http://www.stat.ubc.ca/~jenny/STAT545A/block90_baseLatticeGgplot2.html)
+    - [Taking control of qualitative colors in `ggplot2`](http://www.stat.ubc.ca/~jenny/STAT545A/block17_colorsGgplot2Qualitative.html)
+    - [Head-to-head comparisons of `ggplot2` and `lattice`](http://www.stat.ubc.ca/~jenny/STAT545A/block18_gapminderGgplot2VsLattice.html)
+    - [Data Visualization with R & `ggplot2`](http://inundata.org/2013/04/10/a-quick-introduction-to-ggplot2/) by Karthik Ram (first few slides make a good introduction)
   
 Session 2.1
 

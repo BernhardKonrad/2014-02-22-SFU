@@ -7,6 +7,8 @@ raw: raw.github.com/swcarpentry/bc/gh-pages
 
 [http://tiny.cc/rmiami](http://tiny.cc/rmiami) points to this page
 
+[http://tiny.cc/gapminder](http://tiny.cc/gapminder) points to the Gapminder data we'll use
+
 Session 1.1
 
   * Basics of R/RStudio

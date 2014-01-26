@@ -7,6 +7,8 @@ raw: raw.github.com/swcarpentry/bc/gh-pages
 
 [http://tiny.cc/rmiami](http://tiny.cc/rmiami) points to this page
 
+[http://tiny.cc/rmiami-github](http://tiny.cc/rmiami-github) points to the Github repository the instructors will use during the bootcamp
+
 [http://tiny.cc/gapminder](http://tiny.cc/gapminder) points to the Gapminder data we'll use
 
 We will write R code together "live" in the sessions, but below I link to written content on most topics, for your future reference.
@@ -64,7 +66,7 @@ Session 2.3
 
 Session 2.4
 
-*We assume that between schedule slippage and dedicating time to RCR session, it is wise to leave one session unplanned! If we are on/ahead of schedule, we will have open Q and A.*
+*We assume that between schedule slippage and dedicating time to RCR session, it is wise to leave one session unplanned! If we are on/ahead of schedule, we will have open Q and A and/or pose specific challenges to work on together.
     
 Jenny notes to self (may not make sense to others!)
 

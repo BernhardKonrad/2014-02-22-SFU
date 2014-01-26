@@ -31,6 +31,7 @@ Use the above method to install the following packages:
 
   * `plyr`, [package webpage](http://plyr.had.co.nz) 
   * `knitr` [package webpage](http://yihui.name/knitr/)
+  * `ggplot2` [package webpage](http://docs.ggplot2.org/)
   
 
 ## Communication between RStudio and Git

@@ -11,6 +11,8 @@ raw: raw.github.com/swcarpentry/bc/gh-pages
 
 [http://tiny.cc/gapminder](http://tiny.cc/gapminder) points to the Gapminder data we'll use
 
+[https://etherpad.mozilla.org/2014-01-swc-miami-intermediate](Etherpad) link
+
 We will write R code together "live" in the sessions, but below I link to written content on most topics, for your future reference.
 
 Session 1.1
@@ -22,14 +24,14 @@ Session 1.1
   * Sourcing and compiling an HTML "notebook" from a script
   * See
     - [R basics, workspace and working directory, RStudio projects](http://www.stat.ubc.ca/~jenny/STAT545A/block01_basicsWorkspaceWorkingDirProject.html) -- [source](https://github.com/jennybc/STAT545A/blob/master/block01_basicsWorkspaceWorkingDirProject.rmd)
-  
+
 Session 1.2
 
   * Care and feeding of R objects
   * See
     - [Basic care and feeding of data in R](http://www.stat.ubc.ca/~jenny/STAT545A/block02_careFeedingData.html) -- [source](https://github.com/jennybc/STAT545A/blob/master/block02_careFeedingData.rmd)
     - [R objects (beyond data.frames) and indexing](http://www.stat.ubc.ca/~jenny/STAT545A/block03_basicObjects.html) -- [source](https://github.com/jennybc/STAT545A/blob/master/block03_basicObjects.rmd)
-  
+
 Session 1.3
 
   * Version control with Git
@@ -44,7 +46,7 @@ Session 1.4
     - [Taking control of qualitative colors in `ggplot2`](http://www.stat.ubc.ca/~jenny/STAT545A/block17_colorsGgplot2Qualitative.html)
     - [Head-to-head comparisons of `ggplot2` and `lattice`](http://www.stat.ubc.ca/~jenny/STAT545A/block18_gapminderGgplot2VsLattice.html)
     - [Data Visualization with R & `ggplot2`](http://inundata.org/2013/04/10/a-quick-introduction-to-ggplot2/) by Karthik Ram (first few slides make a good introduction)
-  
+
 Session 2.1
 
   * The shell, especially file management.
@@ -60,7 +62,7 @@ Session 2.3
   * See
     - [`plyr` webpage](http://plyr.had.co.nz)
     - [Data aggregation](http://www.stat.ubc.ca/~jenny/STAT545A/block04_dataAggregation.html) -- [source](https://github.com/jennybc/STAT545A/blob/master/block04_dataAggregation.rmd)
-    
+
 Session 2.4
 
   * Automation and pipelines.
@@ -69,4 +71,3 @@ Session 2.4
   * See
     - [Getting data out of R](http://www.stat.ubc.ca/~jenny/STAT545A/block05_getNumbersOut.html) -- [source](https://github.com/jennybc/STAT545A/blob/master/block05_getNumbersOut.rmd)
     - [Writing figures to file](http://www.stat.ubc.ca/~jenny/STAT545A/topic12_writeFigureToFile.html) -- [source](https://github.com/jennybc/STAT545A/blob/master/topic12_writeFigureToFile.rmd)
- 

@@ -13,6 +13,8 @@ raw: raw.github.com/swcarpentry/bc/gh-pages
 
 [Etherpad](https://etherpad.mozilla.org/2014-01-swc-miami-intermediate) link
 
+[Slides for git intro](http://jennybc.github.io/2014-01-27-miami/lessons/git-slides/git-intro.slides.html#/)
+
 We will write R code together "live" in the sessions, but below I link to written content on most topics, for your future reference.
 
 Session 1.1

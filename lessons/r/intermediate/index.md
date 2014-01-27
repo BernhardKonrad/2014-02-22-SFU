@@ -41,6 +41,7 @@ Session 1.4
 
   * Making figures using `ggplot2`.
   * See
+    - [http://docs.ggplot2.org/](http://docs.ggplot2.org/current/)
     - [Overview of the R graphics landscape](http://www.stat.ubc.ca/~jenny/STAT545A/block90_baseLatticeGgplot2.html)
     - [Taking control of qualitative colors in `ggplot2`](http://www.stat.ubc.ca/~jenny/STAT545A/block17_colorsGgplot2Qualitative.html)
     - [Head-to-head comparisons of `ggplot2` and `lattice`](http://www.stat.ubc.ca/~jenny/STAT545A/block18_gapminderGgplot2VsLattice.html)

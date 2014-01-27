@@ -11,7 +11,7 @@ raw: raw.github.com/swcarpentry/bc/gh-pages
 
 [http://tiny.cc/gapminder](http://tiny.cc/gapminder) points to the Gapminder data we'll use
 
-[https://etherpad.mozilla.org/2014-01-swc-miami-intermediate](Etherpad) link
+[Etherpad](https://etherpad.mozilla.org/2014-01-swc-miami-intermediate) link
 
 We will write R code together "live" in the sessions, but below I link to written content on most topics, for your future reference.
 

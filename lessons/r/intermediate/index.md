@@ -73,3 +73,4 @@ Session 2.4
   * See
     - [Getting data out of R](http://www.stat.ubc.ca/~jenny/STAT545A/block05_getNumbersOut.html) -- [source](https://github.com/jennybc/STAT545A/blob/master/block05_getNumbersOut.rmd)
     - [Writing figures to file](http://www.stat.ubc.ca/~jenny/STAT545A/topic12_writeFigureToFile.html) -- [source](https://github.com/jennybc/STAT545A/blob/master/topic12_writeFigureToFile.rmd)
+    - [An introduction to `Make`](http://kbroman.github.io/minimal_make/) by Karl Broman, aimed at stats / data science types

@@ -29,8 +29,11 @@ apply(tDat, 2, quantile, probs = c(0.25, 0.75))
 ## associated factor
 aggregate(lifeExp ~ continent, gDat, FUN = mean)
 aggregate(lifeExp ~ year * continent, gDat, FUN = mean)
-aggregate(lifeExp ~ continent, gDat, FUN = range)
+aggregate(lifeExp ~ continent, gDat, quantile, probs = c(0.25, 0.75))
 aggregate(country ~ continent, gDat, function(x) length(unique(x)))
+
+## exercise
+## compute the min and max of gdpPercap by country for 4 countries of your choice
 
 ## compute on a data.frame, split out by a factor
 ## install.packages("plyr", dependencies = TRUE)

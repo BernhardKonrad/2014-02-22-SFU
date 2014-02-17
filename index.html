@@ -12,14 +12,16 @@ latlng: 49.276765,-122.917957
 registration: open
 instructor: ["Bernhard Konrad", "Scott Chamberlain", "Christina Koch", "Lynne Williams"]
 contact: admin@software-carpentry.org
-eventbrite: todo
+eventbrite: 8883102599
 ---
 <!--
     This block includes the Eventbrite registration widget if 'eventbrite' has been set in the header.
 -->
 {% if page.eventbrite %}
-<iframe src="http://www.eventbrite.com/tickets-external?eid={{page.eventbrite}}&ref=etckt" frameborder="0" width="100%" scrolling="auto"></iframe>
+<iframe src="http://www.eventbrite.ca/tickets-external?eid={{page.eventbrite}}&ref=etckt" frameborder="0" width="100%" scrolling="auto"></iframe>
 {% endif %}
+
+<br/><br/>
 
 <p>
   <a href="http://software-carpentry.org">Software Carpentry</a>'s mission
@@ -51,7 +53,7 @@ eventbrite: todo
 
 <!--
     This block displays the address and links to a map showing directions.
--->
+
 {% if page.latlng %}
 <p>
   <strong>Where:</strong>
@@ -62,6 +64,7 @@ eventbrite: todo
   <a href="http://maps.google.com/maps?q={{ page.latlng }}">Google Maps</a>.
 </p>
 {% endif %}
+-->
 
 <!--
     Modify the block below if there are any special requirements.
@@ -115,32 +118,32 @@ eventbrite: todo
         <tr>
           <td>9:00 - 9:15</td>
           <td style="text-align: right;">Overview and introduction</td>
-          <td style="text-align: right;">Overview and introduction</td>
+          <td style="text-align: right;">Overview and introduction <i>(Bernhard)</i></td>
         </tr>
         <tr>
           <td>9:15 - 10:30</td>
           <td style="text-align: right;">Navigating in the shell</td>
-          <td style="text-align: right;">Navigating in the shell</td>
+          <td style="text-align: right;">Intro to R and RStudio <i>(Bernhard)</i></td>
         </tr>
         <tr>
           <td>10:50 - 12:00</td>
           <td style="text-align: right;">Shell scripts and automation</td>
-          <td style="text-align: right;">Shell scripts and automation</td>
+          <td style="text-align: right;">Care and feeding of R objects <i>(Scott)</i></td>
         </tr>
         <tr>
           <td>12:00 - 1:00</td>
-          <td style="text-align: right;">Lunch</td>
-          <td style="text-align: right;">Lunch</td>
+          <td style="text-align: right;">Lunch break (no lunch provided)</td>
+          <td style="text-align: right;">Lunch break (no lunch provided)</td>
         </tr>
         <tr>
           <td>1:00 - 2:30</td>
           <td style="text-align: right;">Version Control local (shell)</td>
-          <td style="text-align: right;">Version Control local (R studio)</td>
+          <td style="text-align: right;">Version Control local <i>(Bernhard)</i></td>
         </tr>
         <tr>
           <td>2:50 - 4:30</td>
           <td style="text-align: right;">Version Control remote (github)</td>
-          <td style="text-align: right;">Version Control remote (github)</td>
+          <td style="text-align: right;">Making figures using ggplot2 <i>(Scott)</i></td>
         </tr>
       </tbody>
     </table>
@@ -155,27 +158,27 @@ eventbrite: todo
         <tr>
           <td>9:00 - 10:00</td>
           <td style="text-align: right;">Python data structures</td>
-          <td style="text-align: right;">R data structures</td>
+          <td style="text-align: right;">File management</td>
         </tr>
         <tr>
           <td>10:20 - 12:00</td>
           <td style="text-align: right;">Python flow control; Python functions</td>
-          <td style="text-align: right;">R flow control; R functions</td>
+          <td style="text-align: right;">Version control using Github</td>
         </tr>
         <tr>
           <td>12:00 - 1:00</td>
-          <td style="text-align: right;">Lunch</td>
-          <td style="text-align: right;">Lunch</td>
+          <td style="text-align: right;">Lunch break (no lunch provided)</td>
+          <td style="text-align: right;">Lunch break (no lunch provided)</td>
         </tr>
         <tr>
           <td>1:00 - 2:30</td>
           <td style="text-align: right;">Python testing</td>
-          <td style="text-align: right;">Plotting in R</td>
+          <td style="text-align: right;">Data aggregation using plyr</td>
         </tr>
         <tr>
           <td>2:50 - 4:30</td>
           <td style="text-align: right;">Numpy; Pyplot; Pandas</td>
-          <td style="text-align: right;">R regular expressions</td>
+          <td style="text-align: right;">Automation and pipelines</td>
         </tr>
       </tbody>
     </table>

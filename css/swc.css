@@ -12,6 +12,17 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
     color: inherit;
 }
 
+/* Chapter titles. */
+div.chapter h2 {
+    text-align: center;
+    font-style: italic;
+}
+
+/* Objectives and key points */
+.objectives, .keypoints {
+    background-color: azure;
+}
+
 /* Comments in code. */
 .comment {
     color: purple;
@@ -223,19 +234,9 @@ img.logoARB {
     float: right;
 }
 
-/* Sections in book chapters. */
-section {
-    clear: both;
-}
-
 /* Person's name in team.html. */
 span.person {
     font-weight: bold;
-    font-style: italic;
-}
-
-/* Short review of book in bibliography. */
-span.review {
     font-style: italic;
 }
 

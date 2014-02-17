@@ -12,94 +12,198 @@ latlng: 49.276765,-122.917957
 registration: open
 instructor: ["Bernhard Konrad", "Scott Chamberlain", "Christina Koch", "Lynne Williams"]
 contact: admin@software-carpentry.org
+eventbrite: todo
 ---
+<!--
+    This block includes the Eventbrite registration widget if 'eventbrite' has been set in the header.
+-->
+{% if page.eventbrite %}
+<iframe src="http://www.eventbrite.com/tickets-external?eid={{page.eventbrite}}&ref=etckt" frameborder="0" width="100%" scrolling="auto"></iframe>
+{% endif %}
 
-{% include bootcamps/instructors.html %}
-{% include bootcamps/what.html %}
-{% include bootcamps/who.html %}
-{% include bootcamps/requirements.html %}
-{% include bootcamps/python.html %}
-{% include bootcamps/contact.html %}
+<p>
+  <a href="http://software-carpentry.org">Software Carpentry</a>'s mission
+  is to help scientists and engineers become more productive
+  by teaching them basic lab skills for computing
+  like program design, version control, data management, and task automation.
+  This two-day hands-on bootcamp will cover basic concepts and tools;
+  participants will be encouraged to help one another
+  and to apply what they have learned to their own research problems.
+</p>
+
+<!-- This block displays the instructors' names if they are available. -->
+{% if page.instructor %}
+<p>
+  <strong>Instructors:</strong>
+  {{page.instructor | join: ', ' %}}
+</p>
+{% endif %}
+
+<!--
+    Modify this block to reflect the target audience for your bootcamp.
+    In particular, if it is only open to people from a particular institution,
+    or if specialized prerequisite knowledge is required, please mention that.
+-->
+<p>
+  <strong>Who:</strong>
+  The course is aimed at postgraduate students and other scientists who are familiar with basic programming concepts (like loops, conditionals, arrays, and functions) but need help to translate this knowledge into practical tools to help them work more productively.
+</p>
+
+<!--
+    This block displays the address and links to a map showing directions.
+-->
+{% if page.latlng %}
+<p>
+  <strong>Where:</strong>
+  {{ page.address }}.
+  Get directions with
+  <a href="http://www.openstreetmap.org/?mlat={{ page.latlng | replace:',','&mlon=' }}&zoom=16">OpenStreetMap</a>
+  or
+  <a href="http://maps.google.com/maps?q={{ page.latlng }}">Google Maps</a>.
+</p>
+{% endif %}
+
+<!--
+    Modify the block below if there are any special requirements.
+-->
+<p>
+  <strong>Requirements:</strong>
+  Participants must bring a laptop with a few specific software packages installed
+  (listed below).
+</p>
+
+<!--
+    This block automatically inserts a contact email address if one has been specified for the page.
+    If one hasn't, this block inserts the generic contact address for Software Carpentry.
+-->
+<p>
+  <strong>Contact</strong>:
+  Please mail
+  {% if page.contact %}
+    <a href='mailto:{{page.contact}}'>{{page.contact}}</a>
+  {% else %}
+    <a href='mailto:{{site.contact}}'>{{site.contact}}</a>
+  {% endif %}
+  for more information.
+</p>
 
 <hr/>
+
+<!--
+    Edit this block to show the syllabus and schedule for your bootcamp.
+-->
+<hr/>
+
+<div id="schedule" class="row-fluid">
+  <p>
+    (Schedule is subject to change.)
+  </p>
+  <div class="span10">
+    <strong>February 22nd</strong>
+    <table class="table">
+      <tbody>
+        <tr>
+          <th>Room</th>
+          <th style="text-align: right;">K9509</th>
+          <th style="text-align: right;">TASC-I 9204 E</th>
+        </tr>
+        <tr>
+          <td>8:30 - 9:00</td>
+          <td style="text-align: right;">Setup help</td>
+          <td style="text-align: right;">Setup help</td>
+        </tr>
+        <tr>
+          <td>9:00 - 9:15</td>
+          <td style="text-align: right;">Overview and introduction</td>
+          <td style="text-align: right;">Overview and introduction</td>
+        </tr>
+        <tr>
+          <td>9:15 - 10:30</td>
+          <td style="text-align: right;">Navigating in the shell</td>
+          <td style="text-align: right;">Navigating in the shell</td>
+        </tr>
+        <tr>
+          <td>10:50 - 12:00</td>
+          <td style="text-align: right;">Shell scripts and automation</td>
+          <td style="text-align: right;">Shell scripts and automation</td>
+        </tr>
+        <tr>
+          <td>12:00 - 1:00</td>
+          <td style="text-align: right;">Lunch</td>
+          <td style="text-align: right;">Lunch</td>
+        </tr>
+        <tr>
+          <td>1:00 - 2:30</td>
+          <td style="text-align: right;">Version Control local (shell)</td>
+          <td style="text-align: right;">Version Control local (R studio)</td>
+        </tr>
+        <tr>
+          <td>2:50 - 4:30</td>
+          <td style="text-align: right;">Version Control remote (github)</td>
+          <td style="text-align: right;">Version Control remote (github)</td>
+        </tr>
+      </tbody>
+    </table>
+    <strong>March 1st</strong>
+    <table class="table">
+      <tbody>
+        <tr>
+          <th>Room</th>
+          <th style="text-align: right;">K9509</th>
+          <th style="text-align: right;">ASB 9896</th>
+        </tr>
+        <tr>
+          <td>9:00 - 10:00</td>
+          <td style="text-align: right;">Python data structures</td>
+          <td style="text-align: right;">R data structures</td>
+        </tr>
+        <tr>
+          <td>10:20 - 12:00</td>
+          <td style="text-align: right;">Python flow control; Python functions</td>
+          <td style="text-align: right;">R flow control; R functions</td>
+        </tr>
+        <tr>
+          <td>12:00 - 1:00</td>
+          <td style="text-align: right;">Lunch</td>
+          <td style="text-align: right;">Lunch</td>
+        </tr>
+        <tr>
+          <td>1:00 - 2:30</td>
+          <td style="text-align: right;">Python testing</td>
+          <td style="text-align: right;">Plotting in R</td>
+        </tr>
+        <tr>
+          <td>2:50 - 4:30</td>
+          <td style="text-align: right;">Numpy; Pyplot; Pandas</td>
+          <td style="text-align: right;">R regular expressions</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div> <!-- schedule -->
+
+<hr/>
+
+<!--
+    Edit the setup instructions in _includes/setup.html to reflect your bootcamp.
+    (In particular, most bootcamps teach either Python or R, not both.)
+-->
 
 <h2>Setup</h2>
 
-<div class="row-fluid">
-  <div class="span6">
-    {% include setup/overview-bash.html %}
-    {% include setup/overview-editor.html %}
-  </div>
-  <div class="span6">
-    {% include setup/overview-git.html %}
-  </div>
-</div>
-<div class="row-fluid">
-  <div class="span12">
-    <p>
-    <strong>Note:</strong> If you are in the R room, 
-    please follow the instructions for installing R;
-    if you are in the Python room, please follow the instructions for installing
-    Python.
-    </p>
-  </div>
-</div>
-<div class="row-fluid">
-  <div class="span6">
-    {% include setup/overview-r.html %}
-  </div>
-  <div class="span6">
-    {% include setup/overview-python.html %}
-  </div>
-</div>
+<p>
+  To participate in a Software Carpentry bootcamp,
+  you will need working copies of the software described below.
+  Please make sure to install everything
+  (or at least to download the installers)
+  <em>before</em> the start of your bootcamp.
+</p>
 
-<hr/>
+{% include setup.html %}
 
-<h2>Topics</h2>
-
-<div class="row-fluid">
-  <div class="span6">
-    <h3><a href="lessons/swc-shell/tutorial.html">The Unix Shell</a></h3>
-    <ul>
-      <li>{% include guide-shell/intro/title.md %}</li>
-      <li>{% include guide-shell/filedir/title.md %}</li>
-      <li>{% include guide-shell/create/title.md %}</li>
-      <li>{% include guide-shell/pipefilter/title.md %}</li>
-      <li>{% include guide-shell/loop/title.md %}</li>
-      <li>{% include guide-shell/scripts/title.md %}</li>
-      <li>{% include guide-shell/find/title.md %}</li>
-    </ul>
-  </div>
-  <div class="span6">
-    <h3><a href="lessons/swc-pyblocks/opening.html">Python</a></h3>
-    <ul>
-      <li>{% include guide-pyblocks/basic/title.md %}</li>
-      <li>{% include guide-pyblocks/design/title.md %}</li>
-      <li>{% include guide-pyblocks/index/title.md %}</li>
-      <li>{% include guide-pyblocks/forloop/title.md %}</li>
-      <li>{% include guide-pyblocks/lib/title.md %}</li>
-      <li>{% include guide-pyblocks/logic/title.md %}</li>
-      <li>{% include guide-pyblocks/types/title.md %}</li>
-    </ul>
-  </div>
-</div>
-
-<hr/>
-
-
-<h2> Schedule </h2>
-	{% include schedule.html %}
 
 <h2> Chatrooms </h2>
 	<ul>
-		<li> Link to R etherpad </li>
-		<li> Link to Python etherpad </li>
+		<li> Link to R etherpad (soon) </li>
+		<li> Link to Python etherpad (soon) </li>
 	</ul>
-
-<h2>Reference Guides</h2>
-
-<ul>
-  <li><a href="{{page.root}}/lessons/ref/shell.html">The Unix Shell</a></li>
-  <li><a href="{{page.root}}/lessons/ref/python.html">Python</a></li>
-  <li><a href="{{page.root}}/lessons/ref/sql.html">SQL</a></li>
-</ul>

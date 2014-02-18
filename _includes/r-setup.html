@@ -1,0 +1,76 @@
+<h1 id="r-and-rstudio-set-up">R and RStudio Set Up</h1>
+<h2 id="r-and-rstudio">R and RStudio</h2>
+<ul>
+<li><p>Download and install <a href="http://www.r-project.org">R, a free software environment for statistical computing and graphics</a> from <a href="http://cran.rstudio.com">CRAN</a>, the Comprehensive R Archive Network. It is <strong>highly recommended</strong> to install a precompiled binary distribution for your operating system -- use the links up at the top of the CRAN page linked to above!</p></li>
+<li><p>Install RStudio's IDE (stands for <em>integrated development environment</em>), a powerful user interface for R: <a href="http://www.rstudio.com/ide/download/">http://www.rstudio.com/ide/download/</a></p>
+<ul>
+<li>RStudio includes a <strong>text editor</strong>, so you do not have to install another stand-alone editor.</li>
+<li>RStudio includes <strong>an interface to Git and GitHub</strong>. You will still need to install Git (covered elsewhere) but RStudio provides a basic GUI for interacting with Git(Hub).</li>
+</ul></li>
+</ul>
+<h2 id="testing-testing">Testing testing</h2>
+<ul>
+<li><p>Do whatever is appropriate for your OS to launch RStudio. You should get a window similar to the screenshot you see <a href="http://www.rstudio.com/ide/">here</a>, but yours will be more boring because you haven't written any code or made any figures yet!</p></li>
+<li><p>Put your cursor in the pane labelled Console, which is where you interact with the live R process. Create a simple object with code like <code>x &lt;- 2 * 4</code> (followed by enter or return). Then inspect the <code>x</code> object by typing <code>x</code> followed by enter or return. Obviously you should see the value 8 print to screen. If yes, you are good to go.</p></li>
+<li><p>To make sure that RStudio and Git can talk to each other, please follow the instructions in the corresponding section below.</p></li>
+</ul>
+<h2 id="add-on-packages">Add-on packages</h2>
+<p>R is an extensible system and many people share useful code they have developed as a <em>package</em> via CRAN and github. To install a package from CRAN, for example the <a href="http://plyr.had.co.nz"><code>plyr</code></a> package for data aggregation, here is one way to do it in the R console (there are others).</p>
+<pre><code>  install.packages(&quot;plyr&quot;, dependencies = TRUE)</code></pre>
+<p>By including <code>dependencies = TRUE</code>, we are being explicit and extra-careful to install any additional packages the target package, <code>plyr</code> in the example above, needs to have around.</p>
+<p>Use the above method to install the following packages:</p>
+<ul>
+<li><code>plyr</code>, <a href="http://plyr.had.co.nz">package webpage</a></li>
+<li><code>knitr</code> <a href="http://yihui.name/knitr/">package webpage</a></li>
+<li><code>ggplot2</code> <a href="http://docs.ggplot2.org/">package webpage</a></li>
+</ul>
+<h2 id="communication-between-rstudio-and-git">Communication between RStudio and Git</h2>
+<p>Obviously, RStudio can only act as a GUI front-end for Git if Git has been successfully installed and RStudio can find it.</p>
+<p><em>It would be nice if you did this in advance, but we will also establish this connection in the workshop.</em></p>
+<p>A basic test for successful installation of Git is to simply type <code>git</code> at the shell command line. If you get a complaint about Git not being found it means installation was unsuccessful or that it is not being found, i.e. it is not on your <code>PATH</code>.</p>
+<p>If Git appears to be installed, launch RStudio. Quit and re-launch RStudio if there's any doubt in your mind about whether you opened RStudio before or after installing Git.</p>
+<p>We will create a new dummy &quot;Project&quot; and direct RStudio to put it under version control</p>
+<ul>
+<li>Do <code>File &gt; New Project...</code>. You should see a pop up <a href="http://www.rstudio.com/images/screenshots/rstudio-projects_new.png">like this</a>.</li>
+<li>Select &quot;New Directory: Start a project in a brand new working directory&quot;.</li>
+<li>Select &quot;Empty Project: Create a new project in an empty directory&quot;.</li>
+<li>Create a new directory for this project anywhere you wish, perhaps with a name like <code>test</code>. You can delete this very soon.</li>
+<li>Do <code>Tools &gt; Project Options...</code>. Click on &quot;Git/SVN&quot;. Select &quot;Git&quot; in the Version control system dropdown menu. Answer &quot;yes&quot; to the &quot;Confirm New Git Repository&quot; pop up. Answer &quot;yes&quot; to the &quot;Confirm Restart RStudio&quot; pop up.</li>
+<li>After RStudio re-launches and opens your test Project, the upper left pane should have &quot;Git&quot; tab, typically along with &quot;Environment&quot;, &quot;History&quot;, etc. You can see an example <a href="http://www.rstudio.com/images/screenshots/rstudio-vcs.png">in this screenshot</a>.</li>
+<li>If this has gone well, it looks like Git and RStudio are ready to work together! Feel free to quite RStudio and delete the <code>test</code> directory/Project.</li>
+</ul>
+<p>In some circumstances, it may be necessary to explicitly tell RStudio where to find the Git executable.</p>
+<ul>
+<li>Do <code>RStudio &gt; Preferences</code> or, alternatively, do <code>Tools &gt; Global Options...</code>.</li>
+<li>Click on &quot;Git/SVN&quot;.</li>
+<li>Fill in the Git executable field correctly. Here is a <a href="http://www.molecularecologist.com/wp-content/uploads/2013/11/Screenshot-2013-11-12-09.53.56-Copy1.png">screenshot</a> of someone doing this on a Windows machine.</li>
+<li>If you think Git has been installed but you're not sure where it is, entering <code>which git</code> at the shell command line should reveal the path to the Git executable.</li>
+</ul>
+<h2 id="further-resources">Further resources</h2>
+<p>The above will get your basic setup ready but here are some links if you are interested in reading a bit further.</p>
+<ul>
+<li>How to Use RStudio:
+<ul>
+<li><a href="http://www.rstudio.com/ide/docs/">http://www.rstudio.com/ide/docs/</a></li>
+</ul></li>
+<li>More RStudio Support:
+<ul>
+<li><a href="https://support.rstudio.com/hc/en-us">https://support.rstudio.com/hc/en-us</a></li>
+</ul></li>
+<li>Using Version Control with RStudio
+<ul>
+<li><a href="http://www.rstudio.com/ide/docs/version_control/overview">http://www.rstudio.com/ide/docs/version_control/overview</a></li>
+</ul></li>
+<li>R Installation and Administration
+<ul>
+<li><a href="http://cran.r-project.org/doc/manuals/R-admin.html">http://cran.r-project.org/doc/manuals/R-admin.html</a></li>
+</ul></li>
+<li>R FAQ:
+<ul>
+<li><a href="http://cran.r-project.org/doc/FAQ/R-FAQ.html">http://cran.r-project.org/doc/FAQ/R-FAQ.html</a></li>
+</ul></li>
+<li>More about add-on packages in the R Installation and Administration Manual
+<ul>
+<li><a href="http://cran.r-project.org/doc/manuals/R-admin.html#Add_002don-packages">http://cran.r-project.org/doc/manuals/R-admin.html#Add_002don-packages</a></li>
+</ul></li>
+</ul>

@@ -47,7 +47,7 @@ by(iris[, 1:2], iris[,"Species"], sum)
 `tapply` applies a function to subsets of a vector.
 
 ```{r, eval = TRUE}
-df <- data.frame(names = sample(c("A","B","C"), 10, rep = T), length = rnorm(10))
+df <- data.frame(names = sample(c("A","B","C"), 10, rep = TRUE), length = rnorm(10))
 df
 tapply(df$length, df$names, mean)
 ```
@@ -58,7 +58,7 @@ Now with a more familiar dataset.
 tapply(iris$Petal.Length, iris$Species, mean)
 ```
 
-## lapply (and llply)
+## lapply (and llply from plyr)
 
 What it does: Returns a list of same length as the input. 
 Each element of the output is a result of applying a function to the corresponding element.
@@ -85,9 +85,26 @@ x
 class(x)
 ```
 
+## vapply
+
+`sapply` is more commonly used, but especially when inside a function, use `vapply` as (1) it can be faster and (2) you can check that each element is the right data type. Note that the 3rd argument to `vapply` is a check on the data type. This passes
+
+```{r}
+vec <- 1:10
+vapply(vec, sqrt, 1)
+```
+
+But this throws an error
+
+```{r}
+vec <- 1:10
+vapply(vec, sqrt, "")
+```
+
+
 ## replicate
 
-An extremely useful function to generate datasets for simulation purposes. 
+An extremely useful function to generate datasets for simulation purposes.
 
 ```{r, eval = TRUE}
 replicate(10, rnorm(10))

@@ -94,12 +94,16 @@ vec <- 1:10
 vapply(vec, sqrt, 1)
 ```
 
+In the above example, what are we checking for? What data type?
+
 But this throws an error
 
 ```{r}
 vec <- 1:10
 vapply(vec, sqrt, "")
 ```
+
+But why does it error?
 
 
 ## replicate

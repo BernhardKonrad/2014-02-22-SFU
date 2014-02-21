@@ -7,9 +7,9 @@
 
 * **Very Important** to understand because these are the objects you will manipulate on a day-to-day basis in R. Dealing with object conversions is one of the most common sources of frustration for beginners.
 
-* Everything in `R` is an object. 
+* Everything in `R` is an object. And each object has a class. 
 
-`R` has 6 (although we will not discuss the `raw` class for this workshop)  atomic classes.
+`R` has 6 atomic classes (although we will not discuss the `raw` class for this workshop).
 
 * character
 * numeric (real or decimal)
@@ -48,6 +48,19 @@ typeof(z)
 ```
 
 
+You can also set attributes
+
+
+```r
+x <- "hello"
+attr(x, "thing") <- "greeting"
+x
+attributes(x)
+```
+
+
+You'll notice that if you look at the outputs of functions you use in R, they sometimes have attributes on them. These help other functions that use the outputs of that function, and can help the user understand the data. 
+
 R has many data structures. These include
 
 * atomic vector
@@ -55,7 +68,6 @@ R has many data structures. These include
 * matrix
 * data frame
 * factors
-* tables
 
 
 ### Vectors
@@ -731,16 +743,16 @@ df
 
 ```
 ##    id  x        y
-## 1   a  1  0.01903
-## 2   b  2 -0.64804
-## 3   c  3 -0.40189
-## 4   d  4 -2.05006
-## 5   e  5 -0.60957
-## 6   f  6  0.74551
-## 7   g  7  0.61598
-## 8   h  8 -0.46288
-## 9   i  9  0.06566
-## 10  j 10  0.30031
+## 1   a  1 -0.44961
+## 2   b  2 -1.18516
+## 3   c  3  0.56437
+## 4   d  4  0.09973
+## 5   e  5  0.96928
+## 6   f  6 -0.87494
+## 7   g  7 -0.24379
+## 8   h  8  1.79110
+## 9   i  9 -1.28791
+## 10  j 10  1.74316
 ```
 
 ```r
@@ -749,16 +761,16 @@ cbind(df, data.frame(z = 4))
 
 ```
 ##    id  x        y z
-## 1   a  1  0.01903 4
-## 2   b  2 -0.64804 4
-## 3   c  3 -0.40189 4
-## 4   d  4 -2.05006 4
-## 5   e  5 -0.60957 4
-## 6   f  6  0.74551 4
-## 7   g  7  0.61598 4
-## 8   h  8 -0.46288 4
-## 9   i  9  0.06566 4
-## 10  j 10  0.30031 4
+## 1   a  1 -0.44961 4
+## 2   b  2 -1.18516 4
+## 3   c  3  0.56437 4
+## 4   d  4  0.09973 4
+## 5   e  5  0.96928 4
+## 6   f  6 -0.87494 4
+## 7   g  7 -0.24379 4
+## 8   h  8  1.79110 4
+## 9   i  9 -1.28791 4
+## 10  j 10  1.74316 4
 ```
 
 

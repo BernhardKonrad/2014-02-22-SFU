@@ -10,6 +10,7 @@
 x <- scan("data_file.txt")
 # add a separator
 x <- scan("data/messy_data.txt", what=" ", sep = "\n")
+
 # or read data from the console
 x <- scan()
 # keep entering values and hit an empty return key to end
@@ -31,9 +32,12 @@ Most plain text files can be read with `read.table` or variants thereof (such as
 
 
 ```r
-df <- read.table("data.dat", header = TRUE)
+df <- read.table("messy_data.txt", header = TRUE)
+head(df)
 ```
 
+
+What is this header business?  When would you set header=FALSE vs. TRUE?
 
 or using `readLines`
 
@@ -88,6 +92,8 @@ setwd()
 ```
 
 
+How do you denote your home directory on your computer?
+
 
 ---
 
@@ -100,7 +106,7 @@ Saving files is easy in R. Load the `iris` dataset by running `data(iris)`. Can 
 What commands did you use?
 
 
-# Short term storage
+### Short term storage
 
 
 ```r
@@ -111,7 +117,7 @@ unlink("my_iris.rds")
 
 This is great for short term storage. All factors and other modfications to the dataset will be preserved. However, only R can read these data back and not the best option if you want to keep the file stored in the easiest format.
 
-# Long-term storage
+### Long-term storage
 
 
 ```r
@@ -119,7 +125,7 @@ write.csv(iris, file = "my_iris.csv", row.names = FALSE)
 ```
 
 
-# Easy to store compressed files to save space:
+### Easy to store compressed files to save space:
 
 
 ```r
@@ -128,7 +134,7 @@ write.csv(diamonds, file = bzfile("diamonds.csv.bz2"),
 ```
 
 
-# Reading is even easier:
+### Reading is even easier:
 
 
 ```r
@@ -137,3 +143,15 @@ diamonds5 <- read.csv("diamonds.csv.bz2")
 
 
 Files stored with `saveRDS()` are automatically compressed.
+
+
+# Fast reading! for those with big files
+
+`data.table` has a great function called `fread` that reads faster than other functions. 
+
+
+```r
+library(data.table)
+fread("file.csv")
+```
+

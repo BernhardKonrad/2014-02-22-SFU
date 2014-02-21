@@ -16,7 +16,7 @@ By aster the split-apply-combine strategy and use it to solve complicated data m
 
 # The split-apply strategy
 
-![](splitapply.png)
+![](sac_full.png)
 
 The core idea behind this strategy is to split up the original data (this can be any format includng data.frames, lists, arrays, matrics, vectors), apply existing or custom functions to it, and reassemble the results in the same or different format.
 
@@ -32,6 +32,8 @@ A simple way to subset would be:
 sdf[sdf$color == "blue", ]
 
 we can perform operations on these. But when you have many groups to subset, you will end up writing a lot of lines of code. With `plyr`, you can do this much more easily.
+
+__Note__: With plyr, in functions `*ply` you can reference a column name by doing `.(column)` or `"column"` - just to help you not get confused if you see both.
 
 ```
 ddply(sdf, .(color), summarise, largest=max(value))
@@ -70,19 +72,7 @@ arrange(sdf, color)
 You can also run transformation on the data quite efficiently using mutate
 
 ```
-mutate(df, double = length * 10)
-```
-
----
-
-## More on groupwise transformations
-
-Let's read a large dataset of baby names from the social security administration.
-
-```
-library(plyr)
-library(ggplot2)
-options(stringsAsFactors = FALSE)
+mutate(sdf, double = value * 2)
 ```
 
 # Summarizing the iris dataset
@@ -95,11 +85,19 @@ ddply(iris, .(Species), summarise, mean_sepal = mean(Sepal.Length))
 # 3  virginica      6.588
 ```
 
-![](sac_full.png)
 
+---
+
+## More on groupwise transformations
+
+Let's read a large dataset of baby names from the social security administration.
+
+```
+library(plyr)
+options(stringsAsFactors = FALSE)
+```
 
 ```coffee
-options(stringsAsFactors = FALSE)
 # Can read compressed files directly
 bnames <- read.csv("data/baby-names2.csv.bz2")
 ```
@@ -132,6 +130,11 @@ head(bnames)
 
 ![](full_apply_suite.png)
 
+
+__Exercise__: play with one of the *ply functions we haven't' used yet e..g., 
+
+* dlply to go from a data.frame to a list
+* ldply to go froma list to a data.frame
 
 
 ## reshape2 - melt - cast - recast, etc.
@@ -182,6 +185,24 @@ A melted dataset can then be manipulated back to wide format, with manipulations
 
 
 ```r
+df <- dcast(aqm, month ~ variable, mean)
+df
+```
+
+```
+##   month ozone solar.r   wind  temp
+## 1     5 23.62   181.3 11.623 65.55
+## 2     6 29.44   190.2 10.267 79.10
+## 3     7 59.12   216.5  8.942 83.90
+## 4     8 59.96   171.9  8.794 83.97
+## 5     9 31.45   167.4 10.180 76.90
+```
+
+
+Or a bit more complicated
+
+
+```r
 df <- dcast(aqm, month ~ variable, mean, margins = c("month", "variable"))
 df
 ```
@@ -200,3 +221,25 @@ df
 Notice the perhaps familiar formula interface to manipulate a data.frame that you've likely used in `lm` for example.
 
 You'll find this useful when you use ggplot2 to make visualizations. 
+
+
+__Exercise__: 
+
+1. Using the `iris`... With `Species` as the indicator variable, convert the wide dataset to long such that it appears as below:
+
+```
+  Species     variable value
+1  setosa Sepal.Length   5.1
+2  setosa Sepal.Length   4.9
+3  setosa Sepal.Length   4.7
+4  setosa Sepal.Length   4.6
+5  setosa Sepal.Length   5.0
+6  setosa Sepal.Length   5.4
+```
+
+2.  Save this dataset to disk as `"species1.csv"`. Duplicate the previous function call and save it again as `"species2.csv"``
+
+Write code that does the following:
+
+Create a list of length two containing "species1.csv" and "species2.csv". 
+Now write a `lapply` function to read both csv files using write.csv into a list.

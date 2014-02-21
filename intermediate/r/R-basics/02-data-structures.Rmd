@@ -8,9 +8,9 @@ source("../chunk_options.R")
 
 * **Very Important** to understand because these are the objects you will manipulate on a day-to-day basis in R. Dealing with object conversions is one of the most common sources of frustration for beginners.
 
-* Everything in `R` is an object. 
+* Everything in `R` is an object. And each object has a class. 
 
-`R` has 6 (although we will not discuss the `raw` class for this workshop)  atomic classes.
+`R` has 6 atomic classes (although we will not discuss the `raw` class for this workshop).
 
 * character
 * numeric (real or decimal)
@@ -47,6 +47,17 @@ z <- c(1L, 2L, 3L)
 typeof(z)
 ```
 
+You can also set attributes
+
+```{r eval=FALSE}
+x <- "hello"
+attr(x, "thing") <- "greeting"
+x
+attributes(x)
+```
+
+You'll notice that if you look at the outputs of functions you use in R, they sometimes have attributes on them. These help other functions that use the outputs of that function, and can help the user understand the data. 
+
 R has many data structures. These include
 
 * atomic vector
@@ -54,7 +65,6 @@ R has many data structures. These include
 * matrix
 * data frame
 * factors
-* tables
 
 
 ### Vectors

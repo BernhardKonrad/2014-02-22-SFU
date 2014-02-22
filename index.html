@@ -51,20 +51,13 @@ eventbrite: 8883102599
   The course is aimed at postgraduate students and other scientists who are familiar with basic programming concepts (like loops, conditionals, arrays, and functions) but need help to translate this knowledge into practical tools to help them work more productively.
 </p>
 
-<!--
-    This block displays the address and links to a map showing directions.
-
-{% if page.latlng %}
 <p>
   <strong>Where:</strong>
-  {{ page.address }}.
-  Get directions with
-  <a href="http://www.openstreetmap.org/?mlat={{ page.latlng | replace:',','&mlon=' }}&zoom=16">OpenStreetMap</a>
-  or
-  <a href="http://maps.google.com/maps?q={{ page.latlng }}">Google Maps</a>.
+
+  Simon Fraser University Burnaby campus. <a href="https://goo.gl/maps/lvY6f"> Map here.</a>
+
+The room for the R event is <a href="https://www.google.ca/maps/place/Technology+and+Science+Complex+1/@49.2767276,-122.9142088,17z/data=!3m1!4b1!4m2!3m1!1s0x548679bf39213df3:0x851019771abbd8cd"><i>TASC-I 9204 E</i></a> in the Technology and Science Centre 1, and for Python is <a href="https://www.google.com/maps/place/Shrum+Science-K+Bldg/@49.2777879,-122.9151873,18z/data=!3m1!4b1!4m2!3m1!1s0x548679bf0e7fd1cf:0x38f1ca99a00d9bcf"><i>K9509</i></a> in Shrum Kinesiology. You can look at <a href="http://www.sfu.ca/campuses/maps-and-directions/burnaby-map.html">this map on the Simon Fraser University website</a> to find the building that you need to go to.
 </p>
-{% endif %}
--->
 
 <!--
     Modify the block below if there are any special requirements.
@@ -96,17 +89,14 @@ eventbrite: 8883102599
 <hr/>
 
 <div id="schedule" class="row-fluid">
-  <p>
-    (Schedule is subject to change.)
-  </p>
   <div class="span10">
     <strong>February 22nd</strong>
     <table class="table">
       <tbody>
         <tr>
           <th>Room</th>
-          <th style="text-align: right;">K9509</th>
-          <th style="text-align: right;">TASC-I 9204 E</th>
+          <th style="text-align: right;"><a href="https://www.google.com/maps/place/Shrum+Science-K+Bldg/@49.2777879,-122.9151873,18z/data=!3m1!4b1!4m2!3m1!1s0x548679bf0e7fd1cf:0x38f1ca99a00d9bcf"><i>SCK 9509</i></a></th>
+          <th style="text-align: right;"><a href="https://www.google.ca/maps/place/Technology+and+Science+Complex+1/@49.2767276,-122.9142088,17z/data=!3m1!4b1!4m2!3m1!1s0x548679bf39213df3:0x851019771abbd8cd"><i>TASC-I 9204 E</i></a></th>
         </tr>
         <tr>
           <td>8:30 - 9:00</td>
@@ -115,17 +105,17 @@ eventbrite: 8883102599
         </tr>
         <tr>
           <td>9:00 - 9:15</td>
-          <td style="text-align: right;">Overview and introduction</td>
+          <td style="text-align: right;">Overview and introduction <i>(Christina)</i></td>
           <td style="text-align: right;">Overview and introduction <i>(Bernhard)</i></td>
         </tr>
         <tr>
           <td>9:15 - 10:30</td>
-          <td style="text-align: right;">Navigating in the shell</td>
+          <td style="text-align: right;">Navigating in the shell <i>(Lynne)</i></td>
           <td style="text-align: right;">Intro to R and RStudio <i>(Bernhard)</i></td>
         </tr>
         <tr>
           <td>10:50 - 12:00</td>
-          <td style="text-align: right;">Version Control local</td>
+          <td style="text-align: right;">Local version control <i>(Christina)</i></td>
           <td style="text-align: right;">Care and feeding of R objects <i>(Scott)</i></td>
         </tr>
         <tr>
@@ -135,16 +125,19 @@ eventbrite: 8883102599
         </tr>
         <tr>
           <td>1:00 - 2:30</td>
-          <td style="text-align: right;">Intro to remote version control + shell scripts and automation</td>
-          <td style="text-align: right;">Version Control local <i>(Bernhard)</i></td>
+          <td style="text-align: right;">Intro to remote version control + shell scripts and automation <i>(Christina and Lynne)</i></td>
+          <td style="text-align: right;">Local version control <i>(Bernhard)</i></td>
         </tr>
         <tr>
           <td>2:50 - 4:30</td>
-          <td style="text-align: right;">Continuing with shell scripts, remote version control</td>
-          <td style="text-align: right;">Making figures using ggplot2 <i>(Scott)</i></td>
+          <td style="text-align: right;">Introduction to python, and ipython blocks <i>(Lynne)</i></td>
+          <td style="text-align: right;">Data aggregation using plyr <i>(Scott)</i></td>
         </tr>
       </tbody>
     </table>
+  <p>
+    (Schedule is subject to change.)
+  </p>
     <strong>March 1st</strong>
     <table class="table">
       <tbody>
@@ -171,7 +164,7 @@ eventbrite: 8883102599
         <tr>
           <td>1:00 - 2:30</td>
           <td style="text-align: right;">Python testing</td>
-          <td style="text-align: right;">Data aggregation using plyr</td>
+          <td style="text-align: right;">Making figures using ggplot2</td>
         </tr>
         <tr>
           <td>2:50 - 4:30</td>

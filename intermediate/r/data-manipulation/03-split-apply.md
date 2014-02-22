@@ -1,6 +1,5 @@
-```{r, include = FALSE}
-source("../chunk_options.R")
-```
+
+
 
 # Using the split-apply strategy to manipulate data
 
@@ -142,34 +141,84 @@ __Exercise__: play with one of the *ply functions we haven't' used yet e..g.,
 
 Load `reshape2`
 
-```{r}
+
+```r
 library(reshape2)
 ```
 
+
 Melt - melting a data.frame turns it from wide to long.
 
-```{r}
+
+```r
 names(airquality) <- tolower(names(airquality))
 head(airquality)
+```
+
+```
+##   ozone solar.r wind temp month day
+## 1    41     190  7.4   67     5   1
+## 2    36     118  8.0   72     5   2
+## 3    12     149 12.6   74     5   3
+## 4    18     313 11.5   62     5   4
+## 5    NA      NA 14.3   56     5   5
+## 6    28      NA 14.9   66     5   6
+```
+
+```r
 aqm <- melt(airquality, id=c("month", "day"), na.rm=TRUE)
 head(aqm)
 ```
 
+```
+##   month day variable value
+## 1     5   1    ozone    41
+## 2     5   2    ozone    36
+## 3     5   3    ozone    12
+## 4     5   4    ozone    18
+## 6     5   6    ozone    28
+## 7     5   7    ozone    23
+```
+
+
 A melted dataset can then be manipulated back to wide format, with manipulations along the way.
 
-```{r}
+
+```r
 df <- dcast(aqm, month ~ variable, mean)
 df
 ```
 
+```
+##   month ozone solar.r   wind  temp
+## 1     5 23.62   181.3 11.623 65.55
+## 2     6 29.44   190.2 10.267 79.10
+## 3     7 59.12   216.5  8.942 83.90
+## 4     8 59.96   171.9  8.794 83.97
+## 5     9 31.45   167.4 10.180 76.90
+```
+
+
 Or a bit more complicated
 
-```{r}
+
+```r
 df <- dcast(aqm, month ~ variable, mean, margins = c("month", "variable"))
 df
 ```
 
-Notice the perhaps familiar formula interface to manipulate a `data.frame` that you've likely used in `lm` for example.
+```
+##   month ozone solar.r   wind  temp (all)
+## 1     5 23.62   181.3 11.623 65.55 68.71
+## 2     6 29.44   190.2 10.267 79.10 87.38
+## 3     7 59.12   216.5  8.942 83.90 93.50
+## 4     8 59.96   171.9  8.794 83.97 79.71
+## 5     9 31.45   167.4 10.180 76.90 71.83
+## 6 (all) 42.13   185.9  9.958 77.88 80.06
+```
+
+
+Notice the perhaps familiar formula interface to manipulate a data.frame that you've likely used in `lm` for example.
 
 You'll find this useful when you use ggplot2 to make visualizations. 
 

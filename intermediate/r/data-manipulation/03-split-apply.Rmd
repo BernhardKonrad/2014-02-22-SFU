@@ -11,7 +11,6 @@ Groupwise operations - The plyr package provides an elegant way to extract compl
 * `subset`
 * `summarise`
 * `arrange`
-*  split-apply strategies
 
 By aster the split-apply-combine strategy and use it to solve complicated data manipulation problems.
 

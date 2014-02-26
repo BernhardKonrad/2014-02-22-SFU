@@ -9,11 +9,13 @@ One of the greatest joys of vectorized operations is being able to use the entir
 These include:
 
 ```{r, eval = FALSE}
-apply
-by
-lapply
-tapply
-sapply
+apply  # (acts on a data.frame or matrix)
+by  # (acts on a data.frame)
+lapply # (acts on a list)
+tapply # (acts on a vector or list)
+sapply # (acts on a vector or list)
+vapply # (acts on a vector or list)
+mapply # (acts on a vector or list)
 ```
 
 ## apply
@@ -21,7 +23,8 @@ sapply
 `apply` applies a function to each row or column of a matrix.
 
 ```{r, eval = TRUE}
-m <- matrix(c(1:10, 11:20), nrow = 10, ncol = 2)
+# m <- data.frame(a=c(1:10), b=c(11:20))
+m <- data.frame(a = 1:10, b = 11:20)
 m
 # 1 is the row index
 # 2 is the column index
@@ -39,24 +42,10 @@ apply(m, 2, mean)
 head(iris)
 by(iris[, 1:2], iris[,"Species"], summary)
 by(iris[, 1:2], iris[,"Species"], sum)
+
+by(mtcars, mtcars[,c("cyl","vs")], summary)
 ```
 
-
-## tapply
-
-`tapply` applies a function to subsets of a vector.
-
-```{r, eval = TRUE}
-df <- data.frame(names = sample(c("A","B","C"), 10, rep = TRUE), length = rnorm(10))
-df
-tapply(df$length, df$names, mean)
-```
-
-Now with a more familiar dataset.
-
-```{r, eval = TRUE}
-tapply(iris$Petal.Length, iris$Species, mean)
-```
 
 ## lapply (and llply from plyr)
 
@@ -83,6 +72,23 @@ my_list
 x <- sapply(my_list, mean)
 x
 class(x)
+```
+
+
+## tapply
+
+`tapply` applies a function to subsets of a vector.
+
+```{r, eval = TRUE}
+df <- data.frame(names = sample(c("A","B","C"), 10, rep = TRUE), length = rnorm(10))
+df
+tapply(df$length, df$names, mean)
+```
+
+Now with a more familiar dataset.
+
+```{r, eval = TRUE}
+tapply(iris$Petal.Length, iris$Species, mean)
 ```
 
 ## vapply

@@ -1,0 +1,62 @@
+BOOTCAMP: 2014-02-22-SFU R room
+DAY: 1
+COMMENTS: Post-LUNCH
+
+Intro to git (BK)
+Data aggregation using plyr (SC)
+
+Good:
+-----
+
+PM Sections are very good! I like to see examples, and clearly the speed is very good. Help is adequate and timely.
+
+I think it was a good pace in the afternoon
+
+Good examples that were easy to follow
+
+good pace, great topics covered
+
+great explanation of git: good to know basics -> would like to know about using git with text editor
+
+The description of git was very clear and interesting
+
+Version control is really useful!
+
+Great intro to Git. Would like to see how to set it up in terminal
+
+Learning about RStudio and git was very useful
+
+lots of helpers is good
+
+Great 1 on 1 feedback/assistance.
+
+Super dynamic teaching methods & multi level learning (for instructors and students)
+
+Liked the use of Etherpad
+
+good rate of snack/break time to teaching time
+
+Love the beard. (must be for Scott)
+
+
+
+To improve:
+-----------
+
+Seemed like a bit too much history of functions. Better to use more time for specific information on the use of functions.
+
+The breaks are too long
+
+Need coffee to refresh: Coffee instead of cookies
+
+Not enough green onions :)
+
+Can we have notes beforehand?
+
+I'm completely new to R so I would have benefited form a tutorial/video beforehand
+
+Maybe use a small part of a larger dataset - like gapminder, so I can see the kind of questions that can asked more clearly? Good in second part with iris
+
+Found the git process difficult, maybe spend a little more time on it? (Not too much, I liked everything else we're done today, dont want to sacrifice anything)
+
+Less syntax (can easily look up online), more pointing out what things/functions do

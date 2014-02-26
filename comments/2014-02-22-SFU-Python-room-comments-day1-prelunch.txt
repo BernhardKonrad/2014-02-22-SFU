@@ -1,0 +1,88 @@
+BOOTCAMP: 2014-02-22-SFU  Python room
+DAY: 1
+COMMENTS: PRE-LUNCH
+
+The pace was ok.
+
+The interactive metaphor was useful.
+
+Very interesting tools, but I struggled a bit since I had never used them before.
+
+Great pace, made me comfortable with the command line.
+
+Straight-forward, useful info.
+
+Good awareness of complex topics. Easy to follow.
+
+Going along step-by-step on overhead.
+
+I liked the pace.
+
+Good intro to Git. Easy to get started with Git right away.
+
+Great intro to Git. Knowing about version control is helpful.
+
+Very helpful and thorough.
+
+Very good pace.
+
+Lots of information given.
+
+Very accessible pace, friendly instructors.
+
+Great flow of information. Basics are covered which is the most important.
+
+Good intro to Git.
+
+--The good-- everything else.
+
+Intro to Git was nice and clear.
+
+I liked your willingness to change topics based on the room (i.e., quick branch expaining); also MoPad is great; intro video was great; having challenges.
+
+I really liked the snapshot example for version control.
+
+Loved ... the Git session and the sense of getting comfortable with the shell.
+
+It would have been handy to have the list of command line prompts we went through.
+
+--The bad-- It is a bit hard to hear Lynne at the back of the room
+
+Pace is a little fast for a fresh beginner like me.
+
+Pace was a bit quick at times (esp the git diff stuff -- I got a bit confused).
+
+Shell intro was slow.
+
+Went a little slow in some places and a little too fast in others.
+
+Negative - organization - emails beforehand explaining requirements,
+
+Not entirely sure of possible uses, although, I am sure we will go over that.
+
+Commented code available before would be helpful.
+
+When something goes wrong, people can get lost/fall behind while fixing it.
+
+More coffee please!
+
+Other than text based files.
+
+Maybe post more stuff on the Pad yourself?
+
+Sometimes heard to follow once new commands are given and the previous ones are off the screen. Maybe copy things to the etherpad.
+
+Maybe have an "advanced experience" file for each module in care people are familiar with material
+
+No major/minor complaints.
+
+I'd like to learn more about shell commands, pipes, and grep
+
+It was kind of hard to find this room (all the doors to K building were locked). Also img folder for shell challenge was missing from repo
+
+More coffee please
+
+Very practical and useful! I am convinced and going to use git and shell in my work.
+
+Something to improve: Maybe could you talk about "best practices" to use the shell on an everyday basis? "I color configure mine", "Use tabs"
+

@@ -1,0 +1,60 @@
+BOOTCAMP: 2014-02-22-SFU R room
+DAY: 1
+COMMENTS: PRE-LUNCH
+
+Intro to R and RStudion (BK)
+Care and feeding of R objects (SC)
+
+Good:
+-----
+
+Liked going over the basics of R
+
+Good overview of RStudio
+
+So far very nice general intro
+
+Bernhard's presentation super organized, very easy to follow!
+
+Bernhard very clear
+
+Bernhard's presentation had good pacing
+
+Good content and pace
+
+Good pace
+
+Good stuff
+
+I totally got what we covered in the morning
+
+good attention to questions from people in the course
+
+Your tips and tricks/common issues are really valuable!
+
+
+
+To improve:
+-----------
+
+Please show scripts longer
+
+Scott a little fast, hope to have an example ahead of time
+
+It was difficult to know how to follow Scott's session. Knowing that the notes would all be available would be helpful
+
+For Scott's presentation more hands-on step by step, follow along example rather than reading
+
+Would like to learn about libraries and writing packages
+
+More examples of code that we can follow along with
+
+Can we have notes before the workshop?
+
+A little fast. I would like to see the code docs at beginning of class, saves me having to take notes
+
+very general intro
+
+open/see notes before/during session. Show where Rmd file is so we can follow along and add own notes to that
+
+As part of initial survey, could ask if we have any specific issues and if more than one student has the same you could address that

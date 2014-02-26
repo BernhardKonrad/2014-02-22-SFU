@@ -1,0 +1,29 @@
+BOOTCAMP: 2014-02-22-SFU  Python room
+DAY: 1
+COMMENTS: POST-LUNCH
+
+I liked writing commands on the black board. It helps to be able to see what instructor just did (or use up arrow).
+
+ipython was kind of slow/hard to follow.
+
+Do the functionalities of Matlab in Python. Plotting. Good flow.  Covered all the basics. Great time.
+
+Went a little to fast when coding for Git portion. 
+
+Great day and well taught -- thanks! For the next week I'd be really keen to see how python can be used for plotting and interacting with other programs (e.g., R, databases, etc.).
+
+Excellent intro on pull request/fork and clone.
+
+Having the codes on etherpad was very helpful.
+
+Noting bad really. Next week I'd love to see and learn on grep and testing.
+
+So interesting! :)
+
+Explain what the computer is doing more.
+
+Git!
+
+Maybe provide a couple of pages on basics before people attend. Then in session can spend the time learning the commands, syntax, etc.
+
+Version control = very useful.

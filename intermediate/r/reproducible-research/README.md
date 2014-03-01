@@ -1,4 +1,4 @@
-# Reproducible research and make
+# knitr
 
 **Installing**
 
@@ -9,3 +9,9 @@ install.packages("pander")
 ```
 
 For Make and Pandoc installation instructions please see the [additional-software](../additional_software.md) file.
+
+**To do:**
+
+* Markdown
+* knitr
+* RPubs

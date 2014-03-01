@@ -1,0 +1,15 @@
+Here's my homework!!
+
+```{r external_code, echo=FALSE, cache=FALSE}
+read_chunk("excode.r")
+```
+
+I did some stuff, bla bla bla, and here's what I got:
+
+```{r thing1}
+```
+
+But then I also did this!
+
+```{r thing2}
+```

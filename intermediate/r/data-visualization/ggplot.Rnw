@@ -52,8 +52,7 @@ require(reshape2)
 require(plyr)
 @ 
 \title{Data Visualization Using R \& ggplot2}
-\author{Karthik Ram}
-\date{October 6, 2013}
+\author{Scott Chamberlain}
 \maketitle
 
 % --------------------------------------------------------------

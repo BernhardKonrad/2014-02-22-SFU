@@ -4,7 +4,7 @@ It's easy to generate reports dynamically in `R`. Literate programming is a para
 
 **Basic idea:** Write **data** + **software** + **documentation** (or in this case manuscripts, reports) together.
 
-Analysis code can be divided into text and code "chunks". Doing so allows us to extract the code for machine readable documents (technically referred to as a `tangle`) or produce a human-readable document (also called `weave`).
+Analysis code can be divided into text and code "chunks". Doing so allows us to extract the code for machine readable documents.
 
 Literate programming involves three main steps:  
 
@@ -44,11 +44,6 @@ Markdown is an incredibly simple semantic file format, not too dissimilar from .
 
 
 ---
-
-**Good and Bad Practices**
-
-Related: See [best practices](../R-basics/best-practices.Rmd) in the [R-basics folder](../R-basics/).
-
 
 ## Creating a basic knitr document
 
@@ -123,8 +118,8 @@ fit = lm(Ozone ~ Wind + Temp + Solar.R, data = airquality)
 ## Including formatted tables in markdown
 
 ```{r showtable, results="asis", echo = FALSE, message = FALSE, eval = FALSE, warning = FALSE}
-library(pandoc)
-pander(fit)
+library(pander)
+pandoc(fit)
 ```</code></pre>
 
 ## Global options
@@ -150,16 +145,6 @@ opts_chunk$set(echo = FALSE,
 By adding `cache = TRUE` to a code block definition. After the first run, results will be cached. We'll discuss better ways to acheive the same thing using `Make` in the next section.
 
 
-## Quick reporting
-
-Generating reports in knitr doesn't always have to involve a laborious `.Rmd ` file where scripts need to be broken down into smaller chunks. Sometimes a user might need a simple report generated very quickly from an existing script. The function `stitch()` in knitr makes it possible to generate nicely formatted reports from R scripts. 
-
-knitr provides a template of the source document with default settings which  allows the user to simply pass any R script into this template (consider this one giant code chunk). knitr will  then compile the template to a report. The package currently has build in support for a range of templates from LateX, html, and markdown. To stitch a report:
-
-```
-library(knitr) 
-stitch("your-script.R")
-```
 ## Additional chunk options
 
 Chunks are extremely flexible and more options (beyond the ones listed in the table above) can be included in the header. These look exactly like the kinds of arguments that one might pass to standard R functions. In the example below, the chunk will only be executed if the condition (in this case x less than 5) is satisfied. 

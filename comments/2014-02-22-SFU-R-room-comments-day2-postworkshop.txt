@@ -1,0 +1,26 @@
+BOOTCAMP: 2014-02-22-SFU R room
+DAY: 1
+COMMENTS: PRE-LUNCH
+
+Intro to R and RStudion (BK)
+Care and feeding of R objects (SC)
+
+Good:
+-----
+
+- git cheatsheet handout
+- setting up a project and R workflow
+- gitbash and how stage/unstage shows up in Rstudio
+- ggplot intro
+- overview of git
+
+
+To improve:
+-----
+
+- how to make most of markdown
+- simplify catching up (hard copy, etherpad)
+- move exercises
+- particpants introduce each other, what they want to get out
+- more cheatsheets
+- presenters show in windows

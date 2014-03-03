@@ -1,0 +1,47 @@
+BOOTCAMP: 2014-02-22-SFU R room
+DAY: 2
+COMMENTS: POST-LUNCH
+
+ggplot2 (SC)
+Functions and debugging (BK)
+Putting it all together - the R workflow of a pro (SC)
+
+Good:
+-----
+
+ggplot was great, good intro
+
+ggplot summary was great! Learned some new stuff like face_wrap
+
+Writing functions and ggplot were both awesome and useful
+
+I like being able to copy the script from Github and running them without trying to type along with the instructor
+
+Great to have code to follow along
+
+The workflow demo was really informative
+
+Really nice to see big picture in the workflow example
+
+Seeing the R workflow was helpful, as well as reinforcing the directory structure
+
+Very good. I really like it!
+
+
+
+To improve:
+-----------
+
+I would like to have a ggplot cheat sheet!
+
+I found the explanation on creating functions a little confusing
+
+Functions were too trivial. Try to show one more complicated functions
+
+More examples please (although they do take up a lot of time)
+
+Ran short on time at the end, but the final section is important to bring concepts together
+
+Would appreciate a few more (short 5 minute) breaks
+
+Slow for more experienced R programmes (not really a bad thing though)

@@ -1,0 +1,57 @@
+BOOTCAMP: 2014-02-22-SFU R room
+DAY: 2
+COMMENTS: PRE-LUNCH
+
+File and folder organization (BK)
+Markdown, knitr and RPubs (SC)
+Git from shell and remote on github (BK)
+
+Good:
+-----
+
+File structure made sense and was not what I had been doing at all
+
+Markdown was very interesting
+
+Markdowns were so cool
+
+It would be nice to see git GUIs in addition to RStudio, but command line git control was the best
+
+The assignment where we push and pulled with another was great, very useful.
+
+Explaining Github was great, I was confused about that before the class
+
+I can push and pull now.
+
+Great terminal git tutorial.
+
+Great intro to shell
+
+The slow page in the git session was really good
+
+Github cheat sheet is great!
+
+Great 1on1 and step-by-step instructions
+
+Good speed / balance between tasks
+
+The post-it note feedback system is great!
+
+
+
+To improve:
+-----------
+
+A bit more info in generating informative markdown documentation would be nice
+
+A bit more of an explanation of why we use the programs/services (knitr). It only became clear later in the demo.
+
+A bit slower with the git shell commands/interface, please
+
+I would prefer a bit more Terminal rather than RStudio based
+
+I would do some of the workflow process stuff with post-it notes -- get people moving around and thinking about the process: push, commit, stage, etc
+
+Relate the git/version control stuff to real-world applications
+
+Since I was unable to attend day 1 I felt a little out-of-the-loop because I didn't have the link to the website and scripts, etc.

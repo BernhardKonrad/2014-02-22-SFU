@@ -1,0 +1,39 @@
+Comments from SWC bootcamp, 2/22/14, SFU, Python room, day 2 at the end of the day
+
+"Green" stickies:
+- Good information and exercises
+- Tons of material was covered
+- The heat maps stuff was interesting
+- Very practical info
+- The sticky notes are a great idea
+- git and shell were really good
+- really fast to respond to people needing help
+- pretty good at knowing when an explanation is confusing + clarifying
+- handout was great, more would be better
+- I am glad you talked about etiquette and common practice, more is better.
+- The scripting section was extremely beneficial and will make my life easier.
+- Clarity
+- Interactive + useful, filled some holes in my knowledge
+- ipython notebook is simple and useful for learning
+- I really like the ipython notebook.  I think it makes python more easy to organize and less intimidating
+- Good intro to how to make use of shell and basic python and data visualization
+- Nice, easy to access exampels for intros
+- Very friendly, well documented workshop
+- You guys were great! Thank you for the patience and specially for acknowledging that requirements in scientific-programming life go beyond a language and is more about good practices and a proper toolset.
+
+"Red" stickies:
+- Sometimes it's hard to see what was done on screen as it disappears when run.
+- The pace is a bit quick - if I make one error I get completely lost on which step the instructor is on once I've fixed my error.
+- maybe explain more what each code in python does (esp. the modules/libraries)
+- python instruction was kind of scattered.
+- don't start with ipythonblocks, mabe talk a bit about importing/syntax OR if the goal is to think about programming, maybe don't get so hung up on syntax problems...go through more principles, actual code less
+- the talks were sometimes disorganized if timing changed from the original place
+- more python scripts run in normal python gui, not ipython only
+- a bit slow on python
+- make sure everything works before you teach it
+- git local version control was great, but I don't expect to use the parts with conflict + pushing
+- sometimes it is too fast
+- it would be helpful if you oculd provide some notes/loutline/objective of lesson ahead of time since many of these concepts are new
+- more time on (start?) diagrams
+- I wanted something easy to let my fear behind, hence even though a lot of things were pretty basic (declaring variables, looping, if statements) I actually don't complaint about this because is what I wanted to get started ... leaving Java behind and jumping into python.
+- intro to design ethic (
